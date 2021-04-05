@@ -25,7 +25,7 @@ namespace StringTools
         
             return new APIGatewayProxyResponse
             {
-                Body = isPalindrome ? $"{source} is a Palindrome" : $"{source} is not a Palindrome",
+                Body = JsonConvert.SerializeObject(new Response() { result = isPalindrome ? $"{source} is a Palindrome" : $"{source} is not a Palindrome" }),
                 StatusCode = 200
             };
 
@@ -36,5 +36,11 @@ namespace StringTools
     {
         [JsonProperty("source")]
         public string Source { get; set; }
+    }
+
+    public class Response
+    {
+        [JsonProperty("result")]
+        public string result { get; set; }
     }
 }

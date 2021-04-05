@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/StringTools/demo/1617261291513-2021-04-01T07:14:51.513Z/bin/Release/netcoreapp3.1/StringTools.IsPalindrome.zip"
+                "S3Key": "serverless/StringTools/demo/1617653442902-2021-04-05T20:10:42.902Z/bin/Release/netcoreapp3.1/StringTools.IsPalindrome.zip"
               },
               "Handler": "StringTools::StringTools.IsPalindrome::Handler",
               "Runtime": "dotnetcore3.1",
@@ -192,14 +192,14 @@
               "IsPalindromeLogGroup"
             ]
           },
-          "IsPalindromeLambdaVersionkfRPe7JAopvzTksJf1N7WjdIYOoEgtbkXOGR0c": {
+          "IsPalindromeLambdaVersionPBIXeUqNIZzi39bbp65o2FlP2HE5G1ooY0LGbxpOHjg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "IsPalindromeLambdaFunction"
               },
-              "CodeSha256": "q/SVLWsUWPYR3VBlS2/lFK+YBDgjlDrg7ahc/2vxCaU="
+              "CodeSha256": "fMdlM6LKveXiF68NJ1oIt+YHniz7eX+ruaEQzBZnaE0="
             }
           },
           "ApiGatewayRestApi": {
@@ -284,7 +284,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1617261289919": {
+          "ApiGatewayDeployment1617653441264": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -343,7 +343,7 @@
           "IsPalindromeLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "IsPalindromeLambdaVersionkfRPe7JAopvzTksJf1N7WjdIYOoEgtbkXOGR0c"
+              "Ref": "IsPalindromeLambdaVersionPBIXeUqNIZzi39bbp65o2FlP2HE5G1ooY0LGbxpOHjg"
             }
           },
           "ServiceEndpoint": {
@@ -476,7 +476,7 @@
         "timeout": 6,
         "runtime": "dotnetcore3.1",
         "vpc": {},
-        "versionLogicalId": "IsPalindromeLambdaVersionkfRPe7JAopvzTksJf1N7WjdIYOoEgtbkXOGR0c"
+        "versionLogicalId": "IsPalindromeLambdaVersionPBIXeUqNIZzi39bbp65o2FlP2HE5G1ooY0LGbxpOHjg"
       }
     },
     "configValidationMode": "warn",
@@ -491,7 +491,7 @@
       },
       "package": {
         "individually": true,
-        "artifactDirectoryName": "serverless/StringTools/demo/1617261291513-2021-04-01T07:14:51.513Z"
+        "artifactDirectoryName": "serverless/StringTools/demo/1617653442902-2021-04-05T20:10:42.902Z"
       },
       "functions": {
         "$ref": "$[\"service\"][\"functions\"]"
@@ -501,7 +501,7 @@
   },
   "package": {
     "individually": true,
-    "artifactDirectoryName": "serverless/StringTools/demo/1617261291513-2021-04-01T07:14:51.513Z",
+    "artifactDirectoryName": "serverless/StringTools/demo/1617653442902-2021-04-05T20:10:42.902Z",
     "artifact": ""
   }
 }
